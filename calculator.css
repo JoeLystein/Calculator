@@ -1,0 +1,84 @@
+
+h4{
+    color: white;
+    text-align: center;
+    text-decoration: double;
+    text-shadow: 80px solid green;
+    text-decoration:dashed;
+    text-transform: capitalize;
+}
+body{
+    background-color: bisque;
+}
+.container{
+    border: 2px solid white;
+    padding-top: 1px;
+    padding-left:6px;
+    padding-right: 15px;
+    padding-bottom: 10px; 
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 1500px;
+    background-color: black;
+    /* padding-right: -30px; */
+}
+
+#space2{
+    margin-left: 20px;
+}
+.func{
+    background-color:gray;
+    color:white;
+    border: 2px solid white;
+    width:50px; 
+    height: 50px;
+}
+.func:hover ,#feat:hover, #spec:hover, #opt:hover, #help.func:hover{
+    background-color:white;
+    color: black;
+}
+
+.func:focus {
+    background-color: rgb(236, 11, 11);
+    color: white;
+}
+
+#space{
+    /* background-color: aqua; */
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    width:100%;
+    height: 10%;
+    color: black;
+}
+/* features and spec */
+#feat{
+    background-color: cornflowerblue;
+}
+
+#spec{
+    background-color: orange;
+}
+
+#spec:focus{
+    background-color: fuchsia;
+}
+/* #spec:hover{
+    background-color: black;
+} */
+p{
+    color:white;
+}
+
+/* operation */
+
+#opt{
+    background-color:darkslategrey;
+    /* color: black */
+}
+
+/*  */
+
+#help{
+    background-color: rgb(7, 150, 126);
+}

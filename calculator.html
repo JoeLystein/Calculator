@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css"> 
+    <script type="text/javascript" src="calculator.js"></script>  
+</head>
+<body>
+    <div class="BoxCal">
+       
+        <div class="container">
+            <h4>JR Calculator</h4>
+            <div class="screen">
+                <textarea id="space" name="display" rows="2" cols="35"></textarea>
+                <!-- <textarea id="space2" name="display" rows="2" cols="35"></textarea> -->
+                <!-- <input id="space" name="display"> -->
+            </div>
+            <table>
+                <tr>
+                    <td><input type="button" class="func" id="feat" value="%" onclick="cal('%')"></td>
+                    <td><input type="button" class="func" id="spec" value="CE" onclick="clc()"></td>
+                    <td><input type="button" class="func" id="spec" value="C" onclick="def('')"></td>
+                    <td><input type="button" class="func" id="feat" value="del" onclick="del()"></td>
+                    <td><input type="button" class="func" id="help" value="(" onclick="cal('(')"><br></td>
+                </tr>
+
+                <tr>
+                    <td> <input type="button" class="func" id="feat" value="1/x" onclick=""></td>
+                    <td> <input type="button" class="func" id="feat" value="x^2"onclick="" ></td>
+                    <td> <input type="button" class="func" id="feat" value="sqrt x" onclick="sqrt()"></td>
+                    <td> <input type="button" class="func" id="opt" value="/" onclick="cal('/')"></td>
+                    <td><input type="button" class="func" id="help" value=")" onclick="cal(')')"><br></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" class="func" value="7" onclick="cal('7')"></td>
+                    <td> <input type="button" class="func" value="8" onclick="cal('8')" ></td>
+                    <td> <input type="button" class="func" value="9" onclick="cal('9')"></td>
+                    <td><input type="button" class="func" id="opt" value="*" onclick="cal('*')"></td>
+                    <td><input type="button" class="func" id="help" value="{" onclick="cal('{')"><br></td>
+                </tr>
+
+                <tr>
+                    <td> <input type="button" class="func" value="4" onclick="cal('4')"></td>
+                    <td><input type="button" class="func" value="5" onclick="cal('5')"></td>
+                    <td> <input type="button" class="func" value="6" onclick="cal('6')"></td>
+                    <td> <input type="button" class="func" id="opt" value="-" onclick="cal('-')"></td>
+                    <td><input type="button" class="func" id="help" value="}" onclick="cal('}')"><br></td>
+                </tr>
+
+                <tr>
+                    <td> <input type="button" class="func" value="1" onclick="cal('1')"></td>
+                    <td> <input type="button" class="func" value="2" onclick="cal('2')"></td>
+                    <td> <input type="button" class="func" value="3" onclick="cal('3')"></td>
+                    <td><input type="button" class="func" id="opt" value="+" onclick="cal('+')"></td>
+                    <td><input type="button" class="func" id="help" value="[" onclick="cal('[')"><br></td>
+                </tr>
+
+                <tr>
+                    <td> <input type="button" class="func" value="+/-" ></td>
+                    <td><input type="button" class="func" value="0" onclick="cal('0')"></td>
+                    <td> <input type="button" class="func" value="." onclick="cal('.')"></td>
+                    <td><input type="button" class="func" id="opt" value="=" onclick="result()"></td>
+                    <td>  <input type="button" class="func" id="help" value="]" onclick="cal(']')"><br></td>
+                </tr>
+            </table>
+          
+        </div>
+    </div>
+</body>
+</html>
